@@ -1,0 +1,251 @@
+{
+  "anomaly_detector": {
+    "accuracy": 0.915,
+    "precision": 0.592,
+    "recall": 1.0,
+    "f1": 0.7438,
+    "total_samples": 2893,
+    "true_anomalies": 357,
+    "detected_anomalies": 603
+  },
+  "failure_classifier": {
+    "accuracy": 0.9506,
+    "precision_macro": 0.7953,
+    "recall_macro": 0.8062,
+    "f1_macro": 0.8003,
+    "f1_weighted": 0.9511,
+    "per_class": {
+      "bearing_failure": {
+        "precision": 0.597,
+        "recall": 0.6557,
+        "f1": 0.625,
+        "support": 61
+      },
+      "cooling_degradation": {
+        "precision": 0.7213,
+        "recall": 0.7458,
+        "f1": 0.7333,
+        "support": 59
+      },
+      "efficiency_degradation": {
+        "precision": 0.8269,
+        "recall": 0.8269,
+        "f1": 0.8269,
+        "support": 52
+      },
+      "lubrication_issues": {
+        "precision": 0.6849,
+        "recall": 0.7143,
+        "f1": 0.6993,
+        "support": 70
+      },
+      "motor_imbalance": {
+        "precision": 0.7222,
+        "recall": 0.7222,
+        "f1": 0.7222,
+        "support": 54
+      },
+      "none": {
+        "precision": 0.9961,
+        "recall": 0.9913,
+        "f1": 0.9937,
+        "support": 2301
+      },
+      "overheating": {
+        "precision": 0.8281,
+        "recall": 0.803,
+        "f1": 0.8154,
+        "support": 66
+      },
+      "overload": {
+        "precision": 0.8493,
+        "recall": 0.7848,
+        "f1": 0.8158,
+        "support": 79
+      },
+      "power_instability": {
+        "precision": 0.8989,
+        "recall": 0.9524,
+        "f1": 0.9249,
+        "support": 84
+      },
+      "vibration_anomaly": {
+        "precision": 0.8286,
+        "recall": 0.8657,
+        "f1": 0.8467,
+        "support": 67
+      }
+    },
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0,
+        9,
+        8,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        44,
+        0,
+        0,
+        0,
+        2,
+        10,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        43,
+        1,
+        0,
+        0,
+        0,
+        5,
+        3,
+        0
+      ],
+      [
+        15,
+        0,
+        0,
+        50,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        10,
+        0,
+        1,
+        3,
+        39,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        5,
+        3,
+        2281,
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        1,
+        0,
+        53,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        8,
+        1,
+        1,
+        1,
+        1,
+        62,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        80,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        58
+      ]
+    ],
+    "class_names": [
+      "bearing_failure",
+      "cooling_degradation",
+      "efficiency_degradation",
+      "lubrication_issues",
+      "motor_imbalance",
+      "none",
+      "overheating",
+      "overload",
+      "power_instability",
+      "vibration_anomaly"
+    ]
+  },
+  "risk_scorer": {
+    "accuracy": 0.9685,
+    "f1_macro": 0.9151,
+    "f1_weighted": 0.9686,
+    "per_class": {
+      "critical": {
+        "precision": 0.8635,
+        "recall": 0.9034,
+        "f1": 0.883,
+        "support": 238
+      },
+      "failed": {
+        "precision": 0.8919,
+        "recall": 0.9041,
+        "f1": 0.898,
+        "support": 73
+      },
+      "healthy": {
+        "precision": 0.9924,
+        "recall": 0.9924,
+        "f1": 0.9924,
+        "support": 2240
+      },
+      "warning": {
+        "precision": 0.903,
+        "recall": 0.8713,
+        "f1": 0.8869,
+        "support": 342
+      }
+    },
+    "class_names": [
+      "critical",
+      "failed",
+      "healthy",
+      "warning"
+    ]
+  }
+}

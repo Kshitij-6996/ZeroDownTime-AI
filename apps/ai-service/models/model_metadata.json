@@ -1,0 +1,73 @@
+{
+  "training_date": "2026-05-16T12:14:34.717458",
+  "dataset_size": 14463,
+  "train_size": 11570,
+  "test_size": 2893,
+  "feature_count": 18,
+  "feature_names": [
+    "temperature",
+    "vibration",
+    "voltage",
+    "current",
+    "pressure",
+    "rpm",
+    "load",
+    "power",
+    "runtime_hours",
+    "maintenance_gap_hours",
+    "efficiency",
+    "thermal_fluctuation",
+    "vibration_instability",
+    "temp_power_ratio",
+    "vib_load_interaction",
+    "power_efficiency_ratio",
+    "thermal_stress",
+    "mechanical_stress"
+  ],
+  "models": {
+    "anomaly_detector": {
+      "type": "IsolationForest",
+      "library": "scikit-learn",
+      "n_estimators": 200,
+      "contamination": 0.08,
+      "trained_on": "healthy_samples_only",
+      "healthy_sample_count": 10140
+    },
+    "failure_classifier": {
+      "type": "RandomForestClassifier",
+      "library": "scikit-learn",
+      "n_estimators": 200,
+      "max_depth": 15,
+      "train_accuracy": 0.9971,
+      "test_accuracy": 0.9506,
+      "classes": [
+        "bearing_failure",
+        "cooling_degradation",
+        "efficiency_degradation",
+        "lubrication_issues",
+        "motor_imbalance",
+        "none",
+        "overheating",
+        "overload",
+        "power_instability",
+        "vibration_anomaly"
+      ],
+      "swappable_with": "XGBClassifier"
+    },
+    "risk_scorer": {
+      "type": "GradientBoostingClassifier",
+      "library": "scikit-learn",
+      "n_estimators": 200,
+      "learning_rate": 0.1,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.9685,
+      "classes": [
+        "critical",
+        "failed",
+        "healthy",
+        "warning"
+      ],
+      "swappable_with": "XGBClassifier"
+    }
+  }
+}

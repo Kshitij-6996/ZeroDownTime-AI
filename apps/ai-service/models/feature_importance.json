@@ -1,0 +1,49 @@
+{
+  "failure_classifier": {
+    "temp_power_ratio": 0.12872762542507213,
+    "efficiency": 0.12351929369812426,
+    "temperature": 0.09627186767298505,
+    "vibration": 0.09106929583787593,
+    "power_efficiency_ratio": 0.06895315894781989,
+    "vib_load_interaction": 0.06418276977438425,
+    "mechanical_stress": 0.06357013752554261,
+    "vibration_instability": 0.06289932307597675,
+    "power": 0.04863732821518962,
+    "thermal_stress": 0.04646883399621043,
+    "thermal_fluctuation": 0.04502389046564167,
+    "load": 0.037509918849700355,
+    "rpm": 0.030968994041883954,
+    "pressure": 0.029607947088265387,
+    "maintenance_gap_hours": 0.020551515369339947,
+    "runtime_hours": 0.01600683307965264,
+    "voltage": 0.015221790821661606,
+    "current": 0.01080947611467365
+  },
+  "risk_scorer": {
+    "vibration_instability": 0.75337181035223,
+    "thermal_fluctuation": 0.08464824496970169,
+    "pressure": 0.048146455639994035,
+    "efficiency": 0.03982767748916351,
+    "maintenance_gap_hours": 0.01696783463381246,
+    "mechanical_stress": 0.010758249298334927,
+    "thermal_stress": 0.006648713900507877,
+    "rpm": 0.005235115460414295,
+    "load": 0.0051047844137284085,
+    "voltage": 0.004637156804576501,
+    "runtime_hours": 0.004225945139641563,
+    "temp_power_ratio": 0.0035714944751499365,
+    "vibration": 0.003474515133895254,
+    "temperature": 0.0034015180290403436,
+    "power": 0.0031928252997593808,
+    "power_efficiency_ratio": 0.0029619112236516053,
+    "vib_load_interaction": 0.0027311847186334086,
+    "current": 0.0010945630177648313
+  },
+  "top_features": [
+    "temp_power_ratio",
+    "efficiency",
+    "temperature",
+    "vibration",
+    "power_efficiency_ratio"
+  ]
+}

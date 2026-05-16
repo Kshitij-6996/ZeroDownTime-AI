@@ -1,0 +1,20 @@
+{
+  "failure_types": {
+    "bearing_failure": 0,
+    "cooling_degradation": 1,
+    "efficiency_degradation": 2,
+    "lubrication_issues": 3,
+    "motor_imbalance": 4,
+    "none": 5,
+    "overheating": 6,
+    "overload": 7,
+    "power_instability": 8,
+    "vibration_anomaly": 9
+  },
+  "states": {
+    "critical": 0,
+    "failed": 1,
+    "healthy": 2,
+    "warning": 3
+  }
+}

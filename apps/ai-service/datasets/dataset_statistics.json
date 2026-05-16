@@ -1,0 +1,143 @@
+{
+  "total_samples": 14463,
+  "features": [
+    "temperature",
+    "vibration",
+    "voltage",
+    "current",
+    "pressure",
+    "rpm",
+    "load",
+    "power",
+    "runtime_hours",
+    "maintenance_gap_hours",
+    "efficiency",
+    "thermal_fluctuation",
+    "vibration_instability"
+  ],
+  "feature_count": 13,
+  "machine_types": [
+    "CNC_MILL",
+    "HYD_PRESS",
+    "ROBOT_ARM",
+    "CONVEYOR",
+    "COMPRESSOR",
+    "LATHE",
+    "WELD_CELL",
+    "PUMP_SYS"
+  ],
+  "failure_types": [
+    "bearing_failure",
+    "overheating",
+    "lubrication_issues",
+    "power_instability",
+    "cooling_degradation",
+    "overload",
+    "vibration_anomaly",
+    "efficiency_degradation",
+    "motor_imbalance",
+    "none"
+  ],
+  "state_distribution": {
+    "healthy": 11281,
+    "warning": 1587,
+    "critical": 1219,
+    "failed": 376
+  },
+  "anomaly_distribution": {
+    "0": 12676,
+    "1": 1787
+  },
+  "failure_type_distribution": {
+    "none": 11562,
+    "lubrication_issues": 366,
+    "overload": 358,
+    "power_instability": 341,
+    "bearing_failure": 329,
+    "vibration_anomaly": 320,
+    "efficiency_degradation": 311,
+    "overheating": 302,
+    "cooling_degradation": 288,
+    "motor_imbalance": 286
+  },
+  "sensor_statistics": {
+    "temperature": {
+      "mean": 55.363,
+      "std": 12.109,
+      "min": 32.27,
+      "max": 138.78
+    },
+    "vibration": {
+      "mean": 2.397,
+      "std": 1.192,
+      "min": 0.712,
+      "max": 12.658
+    },
+    "voltage": {
+      "mean": 400.012,
+      "std": 2.826,
+      "min": 386.7,
+      "max": 411.3
+    },
+    "current": {
+      "mean": 46.06,
+      "std": 5.554,
+      "min": 24.05,
+      "max": 50.0
+    },
+    "pressure": {
+      "mean": 6.666,
+      "std": 1.044,
+      "min": 4.56,
+      "max": 10.92
+    },
+    "rpm": {
+      "mean": 2472.375,
+      "std": 1301.409,
+      "min": 0.0,
+      "max": 4639.0
+    },
+    "load": {
+      "mean": 55.176,
+      "std": 10.141,
+      "min": 28.1,
+      "max": 83.8
+    },
+    "power": {
+      "mean": 20.684,
+      "std": 4.841,
+      "min": 9.43,
+      "max": 53.752
+    },
+    "runtime_hours": {
+      "mean": 4032.847,
+      "std": 2277.011,
+      "min": 100.0,
+      "max": 7998.0
+    },
+    "maintenance_gap_hours": {
+      "mean": 355.294,
+      "std": 237.869,
+      "min": 10.0,
+      "max": 1267.409
+    },
+    "efficiency": {
+      "mean": 87.088,
+      "std": 9.355,
+      "min": 40.4,
+      "max": 100.0
+    },
+    "thermal_fluctuation": {
+      "mean": 2.274,
+      "std": 2.158,
+      "min": 0.0,
+      "max": 11.751
+    },
+    "vibration_instability": {
+      "mean": 0.584,
+      "std": 0.655,
+      "min": 0.0,
+      "max": 3.445
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "base_features": [
+    "temperature",
+    "vibration",
+    "voltage",
+    "current",
+    "pressure",
+    "rpm",
+    "load",
+    "power",
+    "runtime_hours",
+    "maintenance_gap_hours",
+    "efficiency",
+    "thermal_fluctuation",
+    "vibration_instability"
+  ],
+  "engineered_features": [
+    "temp_power_ratio",
+    "vib_load_interaction",
+    "power_efficiency_ratio",
+    "thermal_stress",
+    "mechanical_stress"
+  ],
+  "all_features": [
+    "temperature",
+    "vibration",
+    "voltage",
+    "current",
+    "pressure",
+    "rpm",
+    "load",
+    "power",
+    "runtime_hours",
+    "maintenance_gap_hours",
+    "efficiency",
+    "thermal_fluctuation",
+    "vibration_instability",
+    "temp_power_ratio",
+    "vib_load_interaction",
+    "power_efficiency_ratio",
+    "thermal_stress",
+    "mechanical_stress"
+  ],
+  "feature_count": 18
+}

@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+apps/frontend/dist/
+apps/backend/dist/
+
+# Python
+venv/
+.venv/
+*.so
+.Python
+
+# ML Models
+# Deliberately tracking models so fresh clones can run immediately without retraining.
+# apps/ai-service/app/models/saved/*.pkl
+# apps/ai-service/app/models/saved/*.joblib
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+htmlcov/
+
+# Misc
+*.tgz
+.cache/

@@ -1,0 +1,31 @@
+{
+  "name": "zero-downtime-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Industrial Continuity & Predictive Automation Platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" \"npm run dev:ai\"",
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "dev:backend": "cd apps/backend && npm run dev",
+    "dev:ai": "cd apps/ai-service && uvicorn app.main:app --reload --port 8000",
+    "install:all": "npm install && cd apps/ai-service && pip install -r requirements.txt",
+    "build": "cd apps/frontend && npm run build",
+    "lint": "cd apps/frontend && npm run lint"
+  },
+  "keywords": [
+    "industrial-ai",
+    "predictive-maintenance",
+    "automation",
+    "abb-hackathon",
+    "industry-4.0"
+  ],
+  "author": "Zero Downtime AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
